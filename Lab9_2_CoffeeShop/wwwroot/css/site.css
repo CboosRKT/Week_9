@@ -1,0 +1,65 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background: url(https://img.freepik.com/free-photo/coffee-beans-top-view-white-background-space-text_176474-5028.jpg?w=1380&t=st=1663711301~exp=1663711901~hmac=e340ca65c551dcb11e6bd656e3ef604e7f4bd6660788c11dfc1627a57453de9c), no-repeat;
+}
+
+nav, .container-fluid {
+    color: white;
+    background: lightgreen;
+}
+
+a.navbar-brand {
+    color: white;
+}
+
+.text-center {
+    width: 100%;
+    background: rgba(255,255,255, 0.75)
+}
+
+.menuButton {
+    border: none;
+    background-color: inherit;
+    padding: 0em;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.text-center table{
+    display: inline-block;
+    
+    width: 40%;
+    background: rgba(200,200,200, 0.25)
+}
+
+.text-center td{
+    
+    width: 20%;
+    padding: 0px;
+    margin: 0px;
+
+    
+   
+}
+
+.prodLinkName {
+    color: black;
+    line-height: 2em;
+}

@@ -1,0 +1,47 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model List<Product>;
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="text-center">
+
+    <h1> Our Menu </h1>
+   
+        <table > 
+            <tr>
+     <!--   <form method="post" asp-controller="Product" asp-action="MenuItem" id="form1"> -->
+                @{int i = 0;}
+                @foreach(Product pro in @Model)
+                {  i++;
+                 
+                        
+                    <td>
+          
+
+                    <a href ="/product/menuitem/@pro.id" class="prodLinkName"> @pro.prodName </a>
+                    
+                       
+                    @if((i % 2) == 0)
+                        
+                    {
+                     
+                      @:</tr><tr>       
+                    
+                          
+                        
+                    }
+
+                       </td>
+                    
+                }
+                      
+
+               
+       <!-- </form> -->
+       </tr>
+       </table>
+   
+    
+</div>
